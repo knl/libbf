@@ -26,7 +26,7 @@ public:
                         bool partition = false);
 
   /// Move-constructs a counting Bloom filter.
-  counting_bloom_filter(counting_bloom_filter&&) = default;
+  counting_bloom_filter(counting_bloom_filter&&) = delete;
 
   using bloom_filter::add;
   using bloom_filter::lookup;
