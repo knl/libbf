@@ -30,7 +30,7 @@ public:
 private:
   size_t d_;
   std::mt19937 generator_;
-  std::uniform_int_distribution<> unif_;
+  std::uniform_int_distribution<size_t> unif_;
 };
 
 } // namespace bf
