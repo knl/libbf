@@ -9,7 +9,7 @@ size_t a2_bloom_filter::k(double fp) {
 }
 
 size_t a2_bloom_filter::capacity(double fp, size_t cells) {
-  return static_cast<size_t>(std::floor((double)cells / (2 * k(fp)) * std::log(2)));
+  return static_cast<size_t>(std::floor((double)cells / (2 * (double)k(fp)) * std::log(2)));
 }
 
 a2_bloom_filter::a2_bloom_filter(size_t k, size_t cells, size_t capacity,
